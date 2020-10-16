@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="css/all.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.css">
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div class="card">
+  <div class="card-header">
+  <h1>Payment form example</h1>
+ 
+</div>
+
+<form class="card-body">
+<div class="form-row">
+  <div class="col-md-12">
+   <div class="alert alert-danger col-md-12 red" role="alert">
+    Some fields are missing
+  </div>  
+  </div>
+</div>
+
+ <div class="form-row">
+    <div class="form-group col-md-5">
+      <label for="inputCard">Card</label>
+      <input type="number" class="form-control" id="card" placeholder="xxxxxxxxxxxxxxxxxx">
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputCard">CVC</label>
+      <input type="number" class="form-control" id="CVC" placeholder="0000">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputCard">Amount</label>
+      <input type="text" class="form-control" id="Amount" placeholder="Amount">
+    </div>
+</div>
+
+   <div class="form-row">
+  <div class="form-group col-md-6">
+    <label for="inputname">First Name</label>
+    <input type="name" class="form-control" id="name" placeholder="ej. Lorena">
+  </div>
+
+  <div class="form-group col-md-6">
+    <label for="inputlastname">Last Name</label>
+    <input type="name" class="form-control" id="lastname" placeholder="ej. Parra">
+  </div>
+   </div>
+
+   <div class="form-row">
+     <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Angol">
+    </div>
+
+    <div class="form-group col-md-3">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control" placeholder="RM">
+        <option selected>Opciones</option>
+        <option>RM</option>
+        <option>BIO-BIO</option>
+        <option>LA ARAUCANIA</option>
+      </select>
+    </div>
+    <div class="form-group col-md-3">
+      <label for="inputPostCode">Postal Code</label>
+      <input type="number" class="form-control" id="PostCode" placeholder="825000">
+    </div>
+</div>
+
+<div class="form-row">
+ <div class="form-group col-md-6">
+<label>We accept</label>
+<div class="col-md-6  bg-secondary text-light">
+  <div class="custom-control custom-radio custom-control-inline ">
+  <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+  
+  <label class="custom-control-label" for="customRadioInline1"><i class="fab fa-cc-mastercard"></i></label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline2"><i class="fab fa-cc-visa"></i></label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline2"><i class="fab fa-cc-diners-club"></i></label>
+</div>
+<div class="custom-control custom-radio custom-control-inline">
+  <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+  <label class="custom-control-label" for="customRadioInline2"><i class="fab fa-cc-amex"></i></label>
+</div>
+</div>
+</div>
+
+<div class="form-group col-md-6">
+  <label for="message">Message </label>
+  <textarea class="form-control" id="message"></textarea>
+  <p>Add any notes here</p>
+ </div>
+</div>
+
+</div>
+<div class="card-footer">
+<div class="form-group col-md-12 ">
+<button  class="btn btn-primary  float-right mx-1 ">Send</button>
+<button class="btn btn-secondary  float-right mx-1">Cancel</button>
+ 
+</div>
+
+ 
+  </div>
+
+    <script src="app.js"></script>
+</body>
+</form>
